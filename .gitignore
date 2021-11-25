@@ -1,0 +1,14 @@
+access.log
+
+node_modules
+#ignore directory in any project directory
+
+/coverage
+#ignore directory in git-repository
+
+/db/*.sqlite3
+
+doc/**/*.txt
+
+INFO.md
+

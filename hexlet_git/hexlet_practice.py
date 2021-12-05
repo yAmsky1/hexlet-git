@@ -1,5 +1,3 @@
-k = 10
-
 def main():
     print('Hello, World!')
 

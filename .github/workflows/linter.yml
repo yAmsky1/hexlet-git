@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+
+name: my-linter
+
+on: push
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: make lint
+        run: |
+          pip install poetry,
+          poetry run flake8 hexlet_git.

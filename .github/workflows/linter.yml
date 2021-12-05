@@ -10,14 +10,5 @@ jobs:
       - name: install-poetry
         run: |
           pip install poetry
-#         poetry install
-#         poetry add --dev flake8
-                    
-  my-linter:
-    runs-on: ubuntu-latest
-    needs: [poetry-install]
-    
-    steps:
-      - name: make lint
-        run: make install
+          make lint
           

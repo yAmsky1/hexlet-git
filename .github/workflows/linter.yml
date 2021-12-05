@@ -10,5 +10,7 @@ jobs:
       - name: install-poetry
         run: |
           pip install poetry
+          poetry install
+          python3 -m pip install --user dist/*.whl
           poetry run flake8 hexlet_git
           

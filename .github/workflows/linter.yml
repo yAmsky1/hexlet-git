@@ -10,5 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: make lint
         run: |
+          sudo apt install python3
           pip install poetry
           poetry run flake8 hexlet_git

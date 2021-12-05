@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install-poetry
-        run: pip install poetry
+        run: |
+          pip install poetry
+          poetry add --dev flake8
                     
   my-linter:
     runs-on: ubuntu-latest

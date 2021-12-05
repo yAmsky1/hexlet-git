@@ -5,6 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: run linter
-            run: pip install poetry
-            run: poetry run flake8 hexlet_git
+            run: |
+                pip install poetry
+                poetry run flake8 hexlet_git
 
